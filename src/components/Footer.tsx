@@ -8,12 +8,16 @@ function Footer() {
       <SectionContainer>
         <div className="flex flex-col lg:flex-row py-10 justify-between">
           <div className="flex flex-col lg:flex-row justify-between w-full lg:w-[60%]">
-            <div className="w-full lg:w-[33%]">
-              <img src={logo} className="filter invert" alt="the logo image" />
-              <div className="flex flex-row pt-10">
+            <div className="w-full lg:w-[33%] py-5">
+              <img
+                src={logo}
+                className="filter invert mx-auto lg:mx-0"
+                alt="the logo image"
+              />
+              <div className="flex flex-row pt-10 justify-center lg:justify-start">
                 <a
                   href="https://social.fsf"
-                  className="mr-3 text-white hover:text-green cursor-pointer transition-none"
+                  className="mr-3 text-white hover:text-green transition-none"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +32,7 @@ function Footer() {
                 </a>
                 <a
                   href="https://social.fsf"
-                  className="mr-3 text-white hover:text-green cursor-pointer transition-none"
+                  className="mr-3 text-white hover:text-green transition-none"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +47,7 @@ function Footer() {
                 </a>
                 <a
                   href="https://social.fsf"
-                  className="mr-3 text-white hover:text-green cursor-pointer transition-none"
+                  className="mr-3 text-white hover:text-green transition-none"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +62,7 @@ function Footer() {
                 </a>
                 <a
                   href="https://social.fsf"
-                  className="mr-3 text-white hover:text-green cursor-pointer transition-none"
+                  className="mr-3 text-white hover:text-green transition-none"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +77,7 @@ function Footer() {
                 </a>
                 <a
                   href="https://social.fsf"
-                  className="text-white hover:text-green cursor-pointer transition-none"
+                  className="text-white hover:text-green transition-none"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -88,32 +92,54 @@ function Footer() {
                 </a>
               </div>
             </div>
-            <div className="w-full lg:w-[30%]">
-              <a href="#" className="mb-2 text-white hover:text-green capitalize block">
+            <div className="w-full lg:w-[30%] pt-5 lg:pt-0">
+              <a
+                href="#"
+                className="mb-2 text-gray-200 hover:text-green text-center lg:text-left capitalize block"
+              >
                 About us
               </a>
-              <a href="#" className="mb-2 text-white hover:text-green capitalize block">
+              <a
+                href="#"
+                className="mb-2 text-gray-200 hover:text-green text-center lg:text-left capitalize block"
+              >
                 contact
               </a>
-              <a href="#" className="mb-2 text-white hover:text-green capitalize block">
+              <a
+                href="#"
+                className="mb-2 text-gray-200 hover:text-green text-center lg:text-left capitalize block"
+              >
                 blog
               </a>
             </div>
-            <div className="w-full lg:w-[30%]">
-              <a href="#" className="mb-2 text-white hover:text-green capitalize block">
+            <div className="w-full lg:w-[30%] pb-5 lg:pb-5">
+              <a
+                href="#"
+                className="mb-2 text-gray-200 hover:text-green text-center lg:text-left capitalize block"
+              >
                 careers
               </a>
-              <a href="#" className="mb-2 text-white hover:text-green capitalize block">
+              <a
+                href="#"
+                className="mb-2 text-gray-200 hover:text-green text-center lg:text-left capitalize block"
+              >
                 support
               </a>
-              <a href="#" className="mb-2 text-white hover:text-green capitalize block">
+              <a
+                href="#"
+                className="mb-2 text-gray-200 hover:text-green text-center lg:text-left capitalize block"
+              >
                 privacy policy
               </a>
             </div>
           </div>
-          <div className="w-full lg:w-auto text-right">
-            <Button target="#" textButton="request invite" />
-            <p className="text-white opacity-70 text-xs pt-8">Copyright &copy; 2022</p>
+          <div className="w-full lg:w-auto">
+            <div className="flex justify-center lg:justify-end">
+              <Button target="#" textButton="request invite" />
+            </div>
+            <p className="text-white opacity-70 text-xs pt-8 text-center lg:text-right">
+              Copyright &copy; 2022
+            </p>
           </div>
         </div>
       </SectionContainer>
