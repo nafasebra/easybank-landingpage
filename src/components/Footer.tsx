@@ -4,243 +4,119 @@ import SectionContainer from "./SectionContainer";
 
 function Footer() {
   return (
-    <footer className="bg-light mt-20 relative">
-      <div className="bg-footer">
+    <footer className="bg-dark mt-20 relative">
       <SectionContainer>
-        <div className="flex flex-col md:flex-row items-center justify-between py-10">
-          <img src={logo} className="w-[150px]" alt="the logo image" />
-          <div className="flex items-center pt-5 md:pt-5">
-            <a
-              href="https://facebook.com"
-              className="w-7 h-7 flex items-center justify-center text-gray-600 hover:text-black transition-none"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="transition-none" width="24" height="24">
-                <path
-                  fill="currentColor"
-                  d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://instagram.com"
-              className="w-7 h-7 flex items-center justify-center text-gray-600 hover:text-black transition-none ml-2"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="transition-none" width="24" height="24">
-                <path
-                  fill="currentColor"
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://pinterest.com"
-              className="w-7 h-7 flex items-center justify-center text-gray-600 hover:text-black transition-none ml-2"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="transition-none" width="24" height="24">
-                <path
-                  fill="currentColor"
-                  d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://twitter.com"
-              className="w-7 h-7 flex items-center justify-center text-gray-600 hover:text-black transition-none ml-2"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="transition-none" width="24" height="20">
-                <path
-                  fill="currentColor"
-                  d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
-                />
-              </svg>
-            </a>
+        <div className="flex flex-col lg:flex-row py-10 justify-between">
+          <div className="flex flex-col lg:flex-row justify-between w-full lg:w-[60%]">
+            <div className="w-full lg:w-[33%]">
+              <img src={logo} className="filter invert" alt="the logo image" />
+              <div className="flex flex-row pt-10">
+                <a
+                  href="https://social.fsf"
+                  className="mr-3 text-white hover:text-green cursor-pointer transition-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://social.fsf"
+                  className="mr-3 text-white hover:text-green cursor-pointer transition-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="20"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://social.fsf"
+                  className="mr-3 text-white hover:text-green cursor-pointer transition-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://social.fsf"
+                  className="mr-3 text-white hover:text-green cursor-pointer transition-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="18"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://social.fsf"
+                  className="text-white hover:text-green cursor-pointer transition-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="20"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div className="w-full lg:w-[30%]">
+              <a href="#" className="mb-2 text-white hover:text-green capitalize block">
+                About us
+              </a>
+              <a href="#" className="mb-2 text-white hover:text-green capitalize block">
+                contact
+              </a>
+              <a href="#" className="mb-2 text-white hover:text-green capitalize block">
+                blog
+              </a>
+            </div>
+            <div className="w-full lg:w-[30%]">
+              <a href="#" className="mb-2 text-white hover:text-green capitalize block">
+                careers
+              </a>
+              <a href="#" className="mb-2 text-white hover:text-green capitalize block">
+                support
+              </a>
+              <a href="#" className="mb-2 text-white hover:text-green capitalize block">
+                privacy policy
+              </a>
+            </div>
           </div>
-        </div>
-        <hr className="border-gray-300" />
-        <div className="flex flex-col lg:flex-row flex-wrap py-10 uppercase">
-          <div className="w-full lg:w-[25%] py-5 text-center lg:text-left">
-            <p className="text-gray-500">our company</p>
-            <ul className="pt-3">
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the Link first
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the Link second
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the link third
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the link forth
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the link fifth
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full lg:w-[25%] py-5 text-center lg:text-left">
-            <p className="text-gray-500">our company</p>
-            <ul className="pt-3">
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the Link first
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the Link second
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the link third
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the link forth
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the link fifth
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full lg:w-[25%] py-5 text-center lg:text-left">
-            <p className="text-gray-500">our company</p>
-            <ul className="pt-3">
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the Link first
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the Link second
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the link third
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the link forth
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the link fifth
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full lg:w-[25%] py-5 text-center lg:text-left">
-            <p className="text-gray-500">our company</p>
-            <ul className="pt-3">
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the Link first
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the Link second
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the link third
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the link forth
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://go.com"
-                  className="uppercase tracking-wider text-sm hover:font-semibold hover:underline hover:underline-offset-4"
-                >
-                  the link fifth
-                </a>
-              </li>
-            </ul>
+          <div className="w-full lg:w-auto text-right">
+            <Button target="#" textButton="request invite" />
+            <p className="text-white opacity-70 text-xs pt-8">Copyright &copy; 2022</p>
           </div>
         </div>
       </SectionContainer>
-      </div>
     </footer>
   );
 }
