@@ -23,41 +23,41 @@ function App() {
       <div className="bg-extra-light">
         <SectionContainer>
           <div className="py-10">
-          <h2 className="capitalize py-5 text-xl lg:text-3xl">why choose Easybank</h2>
-          <p className="text-sm pb-6 opacity-70 w-full lg:w-[70%]">
+          <h2 className="capitalize py-5 text-xl lg:text-3xl text-center lg:text-left">why choose Easybank</h2>
+          <p className="text-sm pb-6 opacity-70 w-full lg:w-[70%] text-center lg:text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sed
             nesciunt quisquam velit voluptas quia eum error nam repellendus
             amet?
           </p>
           <div className="py-5 flex flex-col lg:flex-row flex-wrap justify-between">
-            <div className="w-[90%] lg:w-[23%] mx-auto lg:mx-0">
-              <img src={bankingIcon} alt="the service 1" />
-              <h3 className="capitalize text-xl py-4">Online banking</h3>
-              <p className="opacity-70 text-sm">
+            <div className="w-[90%] lg:w-[23%] mx-auto lg:mx-0 py-5">
+              <img src={bankingIcon} alt="the service 1" className="mx-auto lg:mx-0" />
+              <h3 className="capitalize text-xl py-4 text-center lg:text-left">Online banking</h3>
+              <p className="opacity-70 text-sm text-center lg:text-left">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                 totam ad velit laboriosam ex corporis?
               </p>
             </div>
-            <div className="w-[90%] lg:w-[23%] mx-auto lg:mx-0">
-              <img src={budgeting} alt="the service 1" />
-              <h3 className="capitalize text-xl py-4">simple budgeting</h3>
-              <p className="opacity-70 text-sm">
+            <div className="w-[90%] lg:w-[23%] mx-auto lg:mx-0 py-5">
+              <img src={budgeting} alt="the service 1" className="mx-auto lg:mx-0" />
+              <h3 className="capitalize text-xl py-4 text-center lg:text-left">simple budgeting</h3>
+              <p className="opacity-70 text-sm text-center lg:text-left">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                 totam ad velit laboriosam ex corporis?
               </p>
             </div>
-            <div className="w-[90%] lg:w-[23%] mx-auto lg:mx-0">
-              <img src={boardingIcon} alt="the service 1" />
-              <h3 className="capitalize text-xl py-4">fast onboarding</h3>
-              <p className="opacity-70 text-sm">
+            <div className="w-[90%] lg:w-[23%] mx-auto lg:mx-0 py-5">
+              <img src={boardingIcon} alt="the service 1" className="mx-auto lg:mx-0" />
+              <h3 className="capitalize text-xl py-4 text-center lg:text-left">fast onboarding</h3>
+              <p className="opacity-70 text-sm text-center lg:text-left">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                 totam ad velit laboriosam ex corporis?
               </p>
             </div>
-            <div className="w-[90%] lg:w-[23%] mx-auto lg:mx-0">
-              <img src={apiIcon} alt="the service 1" />
-              <h3 className="capitalize text-xl py-4">open Api</h3>
-              <p className="opacity-70 text-sm">
+            <div className="w-[90%] lg:w-[23%] mx-auto lg:mx-0 py-5">
+              <img src={apiIcon} alt="the service 1" className="mx-auto lg:mx-0" />
+              <h3 className="capitalize text-xl py-4 text-center lg:text-left">open Api</h3>
+              <p className="opacity-70 text-sm text-center lg:text-left">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                 totam ad velit laboriosam ex corporis?
               </p>
@@ -71,7 +71,7 @@ function App() {
         <div className="py-10">
         <h2 className="text-xl lg:text-3xl py-7 capitalize">latest article</h2>
         <div className="flex flex-col lg:flex-row flex-wrap justify-between">
-          <div className="bg-white rounded-md w-[90%] lg:w-[23%] mx-auto lg:mx-0">
+          <div className="bg-white rounded-md overflow-hidden w-full lg:w-[23%] mx-auto lg:mx-0 my-5">
             <div className="w-full h-[150px]">
               <img src={image1} alt="the service 1" className="h-full w-full object-cover" />
             </div>
@@ -88,7 +88,7 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-md w-[90%] lg:w-[23%] mx-auto lg:mx-0">
+          <div className="bg-white rounded-md overflow-hidden w-full lg:w-[23%] mx-auto lg:mx-0 my-5">
             <div className="w-full h-[150px]">
               <img src={image2} alt="the service 1" className="h-full w-full object-cover" />
             </div>
@@ -105,7 +105,7 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-md w-[90%] lg:w-[23%] mx-auto lg:mx-0">
+          <div className="bg-white rounded-md overflow-hidden w-full lg:w-[23%] mx-auto lg:mx-0 my-5">
             <div className="w-full h-[150px]">
               <img src={image3} alt="the service 1" className="h-full w-full object-cover" />
             </div>
@@ -122,7 +122,7 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-md w-[90%] lg:w-[23%] mx-auto lg:mx-0">
+          <div className="bg-white rounded-md overflow-hidden w-full lg:w-[23%] mx-auto lg:mx-0 my-5">
             <div className="w-full h-[150px]">
               <img src={image4} alt="the service 1" className="h-full w-full object-cover" />
             </div>

@@ -34,9 +34,6 @@ function Sidebar(props: props) {
             careers
           </a>
         </li>
-        <li className="mt-8 flex justify-center">
-          <Button target="https://nothing.com" textButton="request invite" />
-        </li>
       </ul>
     </aside>
   );

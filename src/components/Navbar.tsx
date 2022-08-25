@@ -12,7 +12,7 @@ function Navbar() {
       <div className="bg-white">
         <SectionContainer>
           <nav className="flex flex-row items-center justify-between py-5">
-            <a href="/" className="w-[90px] sm:w-[120px]">
+            <a href="/" className="w-[120px] sm:w-[150px]">
               <img src={logo} className="w-full" alt="" />
             </a>
             <div className="flex flex-row items-center">
@@ -60,7 +60,7 @@ function Navbar() {
               </ul>
               <button
                 onClick={() => setShowMenu(!showMenu)}
-                className="flex flex-col md:hidden border-2 border-black text-black p-2"
+                className="flex flex-col md:hidden p-2"
               >
                 <span
                   className={`
