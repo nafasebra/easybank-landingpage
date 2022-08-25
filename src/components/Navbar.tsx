@@ -75,7 +75,9 @@ function Navbar() {
                 ></span>
               </button>
             </div>
-            <Button target="https://nothing.com" textButton="request invite" />
+            <div className="hidden lg:block">
+              <Button target="https://nothing.com" textButton="request invite" />
+            </div>
           </nav>
         </SectionContainer>
       </div>

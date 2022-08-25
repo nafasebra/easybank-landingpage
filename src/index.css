@@ -20,13 +20,17 @@
     @apply bg-light;
   }
 
-  .bg-header-top {
-    background-size: auto 100%
+  .headerImage {
+    @apply bg-header-mob lg:bg-header-desk relative pt-10;
+    background-size: 50%;
+    background-position: 110% -100px;
   }
 
-  .bg-nav {
-    background-position: bottom;
-    background-size: 100%;
+  @media (max-width: 556px) {
+    .headerImage {
+      background-size: 100%;
+      background-position: left top;
+    }
   }
 }
 

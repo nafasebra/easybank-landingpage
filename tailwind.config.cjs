@@ -11,7 +11,9 @@ module.exports = {
         'blue': '#2BB8D5',
       },
       backgroundImage: {
-        'header': 'url("../src/assets/bg-pattern-mobile-nav.svg")',
+        'header-desk': 'url("../src/assets/bg-intro-desktop.svg")',
+        'header-mob': 'url("../src/assets/bg-intro-mobile.svg")',
+        'mockups': 'url("../src/assets/image-mockups.png")'
       },
     },
   },

@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 type props = {
   show: boolean;
 };
@@ -5,7 +7,7 @@ type props = {
 function Sidebar(props: props) {
   const { show } = props;
   return (
-    <aside className={`${show ? "max-h-[500px] pb-[250px]" : "max-h-0"} block md:hidden bg-dark`}>
+    <aside className={`${show ? "max-h-[500px]" : "max-h-0"} overflow-hidden block md:hidden`}>
       <ul className="text-center py-10">
         <li className="opacity-90">
           <a href="https://go.com" className="hover:text-green">
@@ -31,6 +33,9 @@ function Sidebar(props: props) {
           <a href="https://go.com" className="hover:text-green">
             careers
           </a>
+        </li>
+        <li className="mt-8 flex justify-center">
+          <Button target="https://nothing.com" textButton="request invite" />
         </li>
       </ul>
     </aside>
