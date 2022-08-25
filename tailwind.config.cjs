@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dark-purple': '#2C2640',
-        'dark': '#2B282F',
+        'dark': '#2B2F4A',
         'light': '#FAFAFA',
+        'extra-light': '#EAEBED',
+        'green': '#32D264',
+        'blue': '#2BB8D5',
       },
       backgroundImage: {
         'nav': 'url("../src/assets/bg-pattern-mobile-nav.svg")',

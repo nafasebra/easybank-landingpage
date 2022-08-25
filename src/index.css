@@ -17,7 +17,7 @@
   }
 
   body {
-    @apply bg-white;
+    @apply bg-light;
   }
 
   .bg-header-top {

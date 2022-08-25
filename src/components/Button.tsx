@@ -1,19 +1,21 @@
-import React from 'react'
+import React from "react";
 
 type props = {
-   textButton: string;
-   customStyles: string;
-   target: string;
-}
+  textButton: string;
+  target: string;
+};
 
 function Button(props: props) {
-   const {textButton, customStyles, target} = props;
+  const { textButton, target } = props;
 
   return (
-    <a href={target} className={`${customStyles} flex items-center justify-center py-3 px-5 border-2 bg-transparent uppercase`}>
+    <a
+      href={target}
+      className={`flex items-center justify-center py-3 px-7 bg-gradient-to-r from-green to-blue text-white capitalize rounded-full hover:opacity-75`}
+    >
       {textButton}
     </a>
-  )
+  );
 }
 
-export default Button
+export default Button;
