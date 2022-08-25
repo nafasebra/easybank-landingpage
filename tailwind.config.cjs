@@ -6,15 +6,12 @@ module.exports = {
       colors: {
         'dark': '#2B2F4A',
         'light': '#FAFAFA',
-        'extra-light': '#EAEBED',
+        'extra-light': '#F4F5F7',
         'green': '#32D264',
         'blue': '#2BB8D5',
       },
       backgroundImage: {
-        'nav': 'url("../src/assets/bg-pattern-mobile-nav.svg")',
-        'header-top': 'url("../src/assets/bg-pattern-intro-left.svg")',
-        'section': 'url("../src/assets/bg-pattern-how-we-work.svg")',
-        'footer': 'url("../src/assets/bg-pattern-footer.svg")',
+        'header': 'url("../src/assets/bg-pattern-mobile-nav.svg")',
       },
     },
   },
