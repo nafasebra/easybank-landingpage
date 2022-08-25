@@ -1,5 +1,3 @@
-import Button from "./Button";
-
 type props = {
   show: boolean;
 };
