@@ -12,6 +12,7 @@ I create a landing page (the easybank) with React/Typescript and the tailwindCss
 - TailwindCSS library
 - vite
 - npm
+- gh-pages library (for deploy on github)
 
 ## How to use this?
 - 1 - first install npm and type the command to terminal: `npm install`
